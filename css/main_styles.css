@@ -1183,13 +1183,14 @@ p {
 
 .calendar_items {
 	width: 100%;
-	padding-top: 55px;
+	padding-top: 25px;
 	padding-bottom: 61px;
 }
 
 .calendar_item {
 	width: 100%;
 	padding-left: 39px;
+	padding-right: 39px;
 }
 
 .calendar_item:not(:last-child) {
@@ -1395,4 +1396,12 @@ p {
 	font-weight: 500;
 	color: #bbbbbb;
 	margin-top: 7px;
+}
+
+.list-group-item {
+	border-width: 0 0 1px !important;
+}
+
+.list-group {
+	width: 100%;
 }
