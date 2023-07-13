@@ -1405,3 +1405,20 @@ p {
 .list-group {
 	width: 100%;
 }
+
+.intro-cards {
+	height: 100%;
+	border-radius: 0;
+	background-color: #f0f2f6;
+	border: 0;
+}
+
+.intro-cards .card-header{
+	background: linear-gradient(to right, #4867c0, #329fec);
+	border-radius: 0;
+	color: white;
+}
+
+.intro-cards .card-body{
+	border-radius: 0;
+}
