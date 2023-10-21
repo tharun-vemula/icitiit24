@@ -774,6 +774,58 @@ p {
 	transition: all 200ms ease;
 }
 
+
+.main-nav ul li:hover {
+	background-color: #4867c0;
+	background-image: linear-gradient(to right, #4867c0, #329fec);
+	background: #4867c0;
+	background: linear-gradient(to right, #4867c0, #329fec);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	color: white
+}
+
+.active-link {
+	color: white
+}
+
+ul.nav li.nav-item:hover {
+	color: #fff;
+	background-color: #4867c0;
+	background-image: linear-gradient(to right, #4867c0, #329fec);
+	background: #4867c0;
+	background: linear-gradient(to right, #4867c0, #329fec);
+}
+
+.main-nav-item:hover {
+	color: white
+}
+
+.main-nav ul li.active a {
+	color: #FFFFFF;
+}
+
+.main-nav ul li.active::after {
+	opacity: 1;
+}
+
+.main-nav ul li a {
+
+	color: #4c4c4c;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.theme {
+	background-color: #F8F6F4;
+}
+
 .main_nav ul li:not(:last-child) {
 	margin-right: 26px;
 }
@@ -1612,4 +1664,89 @@ p {
 
 .table-custom-color {
 	background-color: #F0F2F6 !important;
+}
+
+#btn-download {
+	cursor: pointer;
+	display: block;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	-webkit-tap-highlight-color: transparent;
+	/* transform: scale(2); */
+	/* Centering */
+	position: absolute;
+	top: calc(50% - 24px);
+	left: calc(50% - 24px);
+}
+
+#btn-download:hover {
+	background: rgba(#223254, 0.03);
+}
+
+#btn-download svg {
+	margin: 16px 0 0 16px;
+	fill: none;
+	transform: translate3d(0, 0, 0);
+}
+
+#btn-download svg polyline,
+#btn-download svg path {
+	stroke: #0077FF;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	transition: all 0.3s ease;
+	transition-delay: 0.3s;
+}
+
+#btn-download svg path#check {
+	stroke-dasharray: 38;
+	stroke-dashoffset: 114;
+	transition: all 0.4s ease;
+}
+
+#btn-download.downloaded svg .svg-out {
+	opacity: 0;
+	animation: drop 0.3s linear;
+	transition-delay: 0.4s;
+}
+
+#btn-download.downloaded svg path#check {
+	stroke: #20CCA5;
+	stroke-dashoffset: 174;
+	transition-delay: 0.4s;
+}
+
+@keyframes drop {
+	20% {
+		transform: translate(0, -3px);
+	}
+
+	80% {
+		transform: translate(0, 2px);
+	}
+
+	95% {
+		transform: translate(0, 0);
+	}
+}
+
+/* Dribbble Credit */
+.credit {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	transition: all 0.2s ease;
+	-webkit-user-select: none;
+	user-select: none;
+	opacity: 0.6;
+}
+
+.credit img {
+	width: 72px;
+}
+
+.credit:hover {
+	transform: scale(0.95);
 }

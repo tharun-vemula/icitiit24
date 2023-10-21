@@ -17,6 +17,7 @@
   <link rel="stylesheet" type="text/css" href="./css/main_styles.css">
   <link rel="stylesheet" type="text/css" href="./css/responsive.css">
   <link rel="stylesheet" href="./css/timeline.css">
+  <link rel="shortcut icon" href="./img/logo-wbg.png" type="image/x-icon">
   <script defer="" referrerpolicy="origin" src="./scripts/s.js.download"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -50,9 +51,13 @@
         </div>
         <ul>
           <li class="menu_item"><a href="index.html">Home</a></li>
-          <li class="menu_item"><a href="index.html">About us</a></li>
+          <li class="menu_item"><a href="committee.html">Committee</a></li>
+          <li class="menu_item"><a href="authors.html">Authors</a></li>
           <li class="menu_item"><a href="index.html">Speakers</a></li>
-          <li class="menu_item"><a href="index.html">Contact</a></li>
+          <li class="menu_item"><a href="registration.html">Registrations</a></li>
+          <li class="menu_item"><a href="index.html">Camera Ready Submission</a></li>
+          <li class="menu_item"><a href="index.html">Event Details</a></li>
+          <li class="menu_item"><a href="index.html#aboutUs">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -72,10 +77,17 @@
                     <div>
                       <a href="#">
                         <div class="logo_container d-flex flex-row align-items-start justify-content-start">
+                          <div class="logo_image">
+                            <div class="py-2"><img src="./img/logo.png" alt=""></div>
+                          </div>
                           <div class="logo_content">
-                            <div id="logo_text" class="logo_text logo_text_not_ie">ICITIIT'24</div>
-                            <div class="logo_sub">15-16 March 2024, Indian Institute of Information Technology
-                              Kottayam, Kerala.</div>
+                            <div id="logo_text" class="logo_text logo_text_not_ie">
+                              <div class="py-4" style="color: #5F8CD3;"> ICITIIT'24
+                                <div class="logo_sub">15-16 March 2024, Indian Institute of Information Technology
+                                  Kottayam, Kerala.</div>
+                              </div>
+                            </div>
+
                           </div>
                         </div>
                       </a>
@@ -95,56 +107,59 @@
               </div>
             </div>
           </div>
-          <div class="header_nav" id="header_nav_pin">
-            <div class="header_nav_inner">
-              <div class="header_nav_container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
-                        <nav class="main_nav">
-                          <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#aboutUs">About Us</a></li>
-                            <li><a href="#">Speakers</a>
-                            </li>
-                            <li><a href="committee.html">Committee</a>
-                            </li>
-                            <li><a href="authors.html">Authors</a>
-                            </li>
-                            <li><a href="news.html">Program</a></li>
-                            <li><a href="registration.html">Registration</a>
-                            </li>
-                            <li><a href="#contactUs">Contact</a></li>
-                            <li>
-                              <div class="dropdown">
-                                <a class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                  aria-expanded="false">Previous Editions</a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item bg-light" onMouseOver="this.style.color='black'"
-                                      onMouseOut="this.style.color='#4c4c4c'"
-                                      href="http://icitiit23.iiitkottayam.ac.in/">ICITIIT'23</a></li>
-                                  <li><a class="dropdown-item bg-light" onMouseOver="this.style.color='black'"
-                                      onMouseOut="this.style.color='#4c4c4c'"
-                                      href="http://icitiit22.iiitkottayam.ac.in/">ICITIIT'22</a>
-                                  </li>
-                                  <li><a class="dropdown-item bg-light" onMouseOver="this.style.color='black'"
-                                      onMouseOut="this.style.color='#4c4c4c'"
-                                      href="http://icitiit21.iiitkottayam.ac.in/">ICITIIT'21</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                      </div>
-                      </a>
-                      </li>
-                      </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <!-- Navr bar test-->
+
+          <div
+            class="container-fluid main-nav align-items-center  d-md-none  d-sm-none  d-none d-sm-block d-md-block d-lg-block justify-content-start"
+            style="background-color: #F3F7F9; ">
+            <ul class="nav justify-content-center">
+              <li class="nav-item py-3 px-1 active-link">
+                <a class="nav-link active-link" href="#"><span class="main-nav-item fs-6"> Home
+                  </span></a>
+              </li>
+              <li class="nav-item py-3 px-1">
+                <a class="nav-link" href="committee.html"><span class="fs-6" style="color:#7D7E7E"> Committee
+                  </span></a>
+              </li>
+              <li class="nav-item py-3 px-1">
+                <a class="nav-link" href="authors.html"><span class="fs-6" style="color:#7D7E7E"> Authors
+                  </span></a>
+              </li>
+              <li class="nav-item py-3 px-1">
+                <a class="nav-link" href="#"><span class="fs-6" style="color:#7D7E7E"> Speakers
+                  </span></a>
+              </li>
+              <li class="nav-item py-3 px-1">
+                <a class="nav-link" href="registration.html"><span class="fs-6" style="color:#7D7E7E"> Registrations
+                  </span></a>
+              </li>
+              <li class="nav-item py-3 px-1">
+                <a class="nav-link" href="#"><span class="fs-6" style="color:#7D7E7E"> Camera Ready
+                    Submissions
+                  </span></a>
+              </li>
+              <li class="nav-item py-3 px-1">
+                <a class="nav-link" href="#"><span class="fs-6" style="color:#7D7E7E"> Event Details
+                  </span></a>
+              </li>
+              <li class="nav-item py-3 px-1">
+                <a class="nav-link" href="index.html#contactUs"><span class="fs-6" style="color:#7D7E7E"> Contact Us
+                  </span></a>
+              </li>
+              <li class="nav-item dropdown py-3">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false"> <span class="fs-6" style="color:#7D7E7E"> Previous Editions</span> </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" target="_blank"
+                      href="http://icitiit21.iiitkottayam.ac.in/">ICITIIT'23</a></li>
+                  <li><a class="dropdown-item" target="_blank"
+                      href="http://icitiit22.iiitkottayam.ac.in/">ICITIIT'22</a></li>
+                  <li><a class="dropdown-item" target="_blank"
+                      href="http://icitiit23.iiitkottayam.ac.in/">ICITIIT'21</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </header>
@@ -196,58 +211,39 @@
                 participants, fostering growth, learning, and progress in the ever-evolving landscape of technology and
                 IT.
               </p>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="container-fluid p-3">
-                    <div class="container">
-                      <div class="justify-content-start p-3 border"
-                        style="display: inline; background-color: whitesmoke;">
-                        <a href="" class="fs-5 text-black" style="background-color: whitesmoke; display: inline;"><i
-                            class="fa-regular fa-circle-down" aria-hidden="true"></i> Download
-                          Flyer
-                        </a>
-                      </div>
-                    </div>
-                  </div>
 
+              <div class="container p-4">
+
+                <div class="" style="display: inline;">
+                  <ul>
+                    <li><a href=""> <img style="display: inline;" src="./img/dl.png" width="25px" height="25px"
+                          srcset="">Download Flyer</a></li>
+                    <li><a href=""> <img style="display: inline;" src="./img/dl.png" width="25px" height="25px"
+                          srcset=""> Download Brochure</a></li>
+                    <li><a href=""> <img style="display: inline;" src="./img/dl.png" width="25px" height="25px"
+                          srcset=""> Download Program Schedule</a></li>
+                    <li><a href=""> <img style="display: inline;" src="./img/dl.png" width="25px" height="25px"
+                          srcset=""> Download Inaugural Schedule</a></li>
+                  </ul>
+                </div>
+                <h3 class="text-secondary fs-5 my-3 ms-1"><b>Sponsors</b></h3>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="./img/iiit-logo.jpg" alt="" class="img img-thumbnail img-fluid">
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="./img/ieee.png" alt="" class="img img-thumbnail img-fluid">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div class="col-lg-6">
-          <div class="card mb-4 intro-cards">
-            <div class="card-header fs-5">
-              The Institute
-            </div>
-            <div class="card-body p-4">
-              <p style="text-align: justify; font-family: 'Noto Sans', sans-serif;">
-                <b>Indian Institute of Information Technology, Kottayam</b> at Valavoor, Pala, Kerala is one among the
-                IIITs that
-                have been
-                established as "Institutions of National Importance" by Ministry of Education, Govt. of India under the
-                ambit of IIIT
-                (PPP) Act 2017. The institute offers 4 year B.Tech. and B.Tech. (Hons) program, Ph.D. programs in
-                frontier
-                areas of CSE,
-                ECE and Mathematics as well as M.Tech. in AI & Data Science, Cyber Security, CSE with specialization in
-                Big Data&
-                Machine Learning, CSE with specialization in Finance Technology for the working professionals.
-              </p>
-
-              <h3 class="text-secondary fs-5 my-3 ms-1"><b>Sponsors</b></h3>
-              <div class="row">
-                <div class="col-lg-6">
-                  <img src="./img/iiit-logo.jpg" alt="" class="img img-thumbnail img-fluid">
-                </div>
-                <!-- <div class="col-lg-6">
-                      <img src="./img/ieee.png" alt="" class="img img-thumbnail img-fluid">
-                    </div> -->
     </div>
   </div>
   </div>
-  </div> -->
+  </div>
   </div>
   </div>
   <!-- End Of Introduction-->
@@ -264,7 +260,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <p style="text-align: justify; font-family: 'Noto Sans', sans-serif !important">
-                  Indian Institute of Information Technology, Kottayam, situated in Valavoor, Pala, Kerala, is a
+                  <b>Indian Institute of Information Technology, Kottayam</b>, situated in Valavoor, Pala, Kerala, is a
                   distinguished institution
                   designated as "An Institute of National Importance" by the Ministry of Education, Government of India,
                   under the IIIT
@@ -291,13 +287,13 @@
                 </p>
               </div>
               <div class="col-lg-6">
-                <img src="./img/college.jpeg" alt="" srcset="">
+                <img src="./img/college.jpeg" class="rounded img-fluid" alt="" srcset="">
               </div>
             </div>
             <br>
             <div class="row">
               <div class="col-lg-6">
-                <img src="./img/college-2.jpeg" alt="" srcset="">
+                <img src="./img/college-2.jpeg" class="rounded img-fluid" alt="" srcset="">
               </div>
               <div class="col-lg-6">
                 <p style="text-align: justify; font-family: 'Noto Sans', sans-serif !important">
@@ -342,251 +338,8 @@
 
 
   <hr>
-  <!-- Call for Papers-->
-  <!-- <div class="calendar" id="cfp">
-      <div class="container reset_container">
-        <div class="row">
 
 
-          <div class="col-xl-12 calendar_col">
-            <div class="calendar_container">
-              <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
-                <div>
-                  <div class="calendar_icon"><img src="./img/calendar.svg" alt=""></div>
-                </div>
-                <div class="calendar_title">Call for Papers</div>
-              </div>
-              <div class="content p-3 pb-0">
-                <p class="fs-6 text-black mb-0 pb-0">ICITIIT'24 invites contributions in all areas of Information
-                  Technology, but not
-                  limited to
-                  the following topics</p>
-              </div>
-              <div class="calendar_items">
-                <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>
-                        • Artificial Intelligence and Data
-                        Science</b>
-                    </li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Cognitive Computing and Deep
-                        Learning</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Audio, Image/Video
-                        Processing</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Social Network Analysis</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Big Data Processing</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Complex Networks Mining</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Graph Signal Processing</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Algorithms for Network Analysis
-                      </b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Algorithms for Network Analysis
-                      </b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Blockchain Technology</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Cyber Physical Systems </b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Quantum computing</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Internet of Things (IoT)</b>
-                    </li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Edge/ Fog Computing</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Smart Systems for Automotive</b>
-                    </li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Robotics and Automation</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Networks, Smart Cities and Smart
-                        Grids</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Complex Networks and CPS/IoT</b>
-                    </li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• High Performance and Scalable
-                        Computing</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Network Neuroscience</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Vehicular Networks and
-                        Intelligent
-                        Transportation</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Connected Unmanned
-                        Aerial/Underwater Systems</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Wireless Broadband Networks</b>
-                    </li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Reconfigurable Computing and
-                        Embedded Systems</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Hardware/Software Co-design</b>
-                    </li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Analog/RF/ Mixed signal Circuits
-                        and Systems</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Neuromorphic Engineering</b>
-                    </li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Device modelling and Emerging
-                        Devices/Technologies</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Bio-informatics and Earth
-                        Sciences
-                        Applications</b></li>
-                    <li class="list-group-item" style="background-color: #F0F2F6;"><b>• Intelligent System-On-Chip
-                        Design
-                        for various applications</b></li>
-                  </ul>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-  <!-- <div class="calendar" id="papers">
-      <div class="container reset_container">
-        <div class="row">
-
-
-          <div class="col-xl-12 calendar_col">
-            <div class="calendar_container">
-              <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
-                <div>
-                  <div class="calendar_icon"><img src="./img/calendar.svg" alt=""></div>
-                </div>
-                <div class="calendar_title">Call for Papers</div>
-              </div>
-              <div class="content p-3 pb-0">
-                <p class="fs-6 text-black mb-0 pb-0">ICITIIT'24 invites contributions in all areas of Information
-                  Technology, but not
-                  limited to
-                  the following topics</p>
-              </div>
-              <br>
-              <div class="table-responsive">
-                <table class="table table-borderless align-middle">
-                  <tbody>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Artificial Intelligence and Data Science</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Cognitive Computing and Deep Learning</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Audio, Image/Video Processing</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Social Network Analysis</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Big Data Processing</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Complex Networks Mining</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Graph Signal Processing</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Algorithms for Network Analysis</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Blockchain Technology</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Quantum computing</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Internet of Things (IoT)</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Edge/ Fog Computing</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Robotics and Automation</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Networks, Smart Cities and Smart Grids</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>High Performance and Scalable Computing</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Network Neuroscience</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Vehicular Networks and Intelligent Transportation</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Connected Unmanned Aerial/Underwater Systems</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Wireless Broadband Networks</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Hardware/Software Co-design</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Analog/RF/ Mixed signal Circuits and Systems</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Neuromorphic Engineering</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Device modelling and Emerging Devices/Technologies</b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Earth Sciences Applications</b></td>
-                    </tr>
-                    <tr class="align-middle" style="text-align: center;">
-                      <td class="table-custom-color"><b>Bio-informatics </b>
-                      </td>
-
-                      <td class="table-custom-color"><b>Intelligent System-On-Chip Design for various applications</b>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-
-
-  <!-- Timeline -->
-  <!-- <div class="calendar">
-    <div class="container reset_container">
-      <div class="row">
-        <div class="col-xl-6 offset-md-3 calendar_col">
-          <div class="calendar_container">
-            <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
-              <div>
-                <div class="calendar_icon"><img src="./img/calendar.svg" alt=""></div>
-              </div>
-              <div class="calendar_title">Important Dates</div>
-            </div>
-            <div class="calendar_items">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <h6 class="card-title">Timeline</h6>
-                        <div id="content">
-                          <ul class="timeline">
-                            <li class="event" data-date="15 November 2023">
-                              <h3>Last date of Full-length Submissions</h3>
-                            </li>
-                            <li class="event" data-date="31 December 2023">
-                              <h3>Notification of acceptance</h3>
-                            </li>
-                            <li class="event" data-date="15 January 2024">
-                              <h3>Registration of accepted Paper</h3>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <section id="timeline">
     <div class="container">
 
@@ -624,70 +377,7 @@
     </div>
   </section>
 
-  <!-- <div class="calendar">
-    <div class="container reset_container">
-      <div class="row">
-        <div class="col-xl-6 offset-md-3 calendar_col">
-          <div class="calendar_container">
-            <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
-              <div>
-                <div class="calendar_icon"><img src="./img/calendar.svg" alt=""></div>
-              </div>
-              <div class="calendar_title">Important Dates</div>
-            </div>
-            <div class="calendar_items">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <h6 class="card-title">Timeline</h6>
-                        <div id="content">
-                          <table class="table table-striped table-bordered table-warning" style="font-weight:400;">
-                            <tr>
-                              <td>Call for Paper Announcement</td>
-                              <td class="font-weight-bold">::: 15 Aug 2022</td>
-                            </tr>
-                            <tr>
-                              <td>Draft Paper Submission Ends </td>
-                              <td class="font-weight-bold">::: <strike color="red">05 Nov 2021</strike>&nbsp;&nbsp;01
-                                Dec
-                                2022&nbsp;&nbsp;<p color="red">CLOSED!</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>Notification of Acceptance</td>
-                              <td class="font-weight-bold">::: <strike color="red">30 Dec 2021</strike>&nbsp;&nbsp;10
-                                Jan
-                                2023&nbsp;&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td>Final Camera-Ready Paper Submission Ends</td>
-                              <td class="font-weight-bold">::: <strike color="red">10 Jan 2023</strike>&nbsp;&nbsp;20
-                                Jan
-                                2023&nbsp;&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td>Registration for Conference Starts</td>
-                              <td class="font-weight-bold">::: 10 Jan 2023</td>
-                            </tr>
-                            <tr>
-                              <td>Registration for Conference Ends</td>
-                              <td class="font-weight-bold">::: 25 Jan 2023</td>
-                            </tr>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -744,15 +434,6 @@
               <strong>Phone:</strong> +91-482-2202100, <br>+91-482-2202167, +91-482-2202161<br>
               <strong>Email:</strong> icitiit24@iiitkottayam.ac.in<br>
             </p>
-            <!--
-                  <div class="social-links">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                  </div>
-                -->
           </div>
 
         </div>
@@ -775,18 +456,6 @@
   <script src="./scripts/parallax.min.js"></script>
   <script src="./scripts/custom.js"></script>
 
-  <!-- <script async="" src="./scripts/js"></script> -->
-  <!-- <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-23581568-13');
-    </script>
-    <script defer="" src="./scripts/v52afc6f149f6479b8c77fa569edb01181681764108816"
-      integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
-      data-cf-beacon="{&quot;rayId&quot;:&quot;7df5e4b06ecc2e96&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;si&quot;:100}"
-      crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>

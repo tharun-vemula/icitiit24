@@ -17,19 +17,15 @@
     <link rel="stylesheet" type="text/css" href="./css/main_styles.css">
     <link rel="stylesheet" type="text/css" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="shortcut icon" href="./img/logo-wbg.png" type="image/x-icon">
     <script defer="" referrerpolicy="origin" src="./scripts/s.js.download"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <script nonce="27173b9a-d4bc-41fc-acc6-65d842f01841">(function (w, d) { !function (bv, bw, bx, by) { bv[bx] = bv[bx] || {}; bv[bx].executed = []; bv.zaraz = { deferred: [], listeners: [] }; bv.zaraz.q = []; bv.zaraz._f = function (bz) { return function () { var bA = Array.prototype.slice.call(arguments); bv.zaraz.q.push({ m: bz, a: bA }) } }; for (const bB of ["track", "set", "debug"]) bv.zaraz[bB] = bv.zaraz._f(bB); bv.zaraz.init = () => { var bC = bw.getElementsByTagName(by)[0], bD = bw.createElement(by), bE = bw.getElementsByTagName("title")[0]; bE && (bv[bx].t = bw.getElementsByTagName("title")[0].text); bv[bx].x = Math.random(); bv[bx].w = bv.screen.width; bv[bx].h = bv.screen.height; bv[bx].j = bv.innerHeight; bv[bx].e = bv.innerWidth; bv[bx].l = bv.location.href; bv[bx].r = bw.referrer; bv[bx].k = bv.screen.colorDepth; bv[bx].n = bw.characterSet; bv[bx].o = (new Date).getTimezoneOffset(); if (bv.dataLayer) for (const bI of Object.entries(Object.entries(dataLayer).reduce(((bJ, bK) => ({ ...bJ[1], ...bK[1] })), {}))) zaraz.set(bI[0], bI[1], { scope: "page" }); bv[bx].q = []; for (; bv.zaraz.q.length;) { const bL = bv.zaraz.q.shift(); bv[bx].q.push(bL) } bD.defer = !0; for (const bM of [localStorage, sessionStorage]) Object.keys(bM || {}).filter((bO => bO.startsWith("_zaraz_"))).forEach((bN => { try { bv[bx]["z_" + bN.slice(7)] = JSON.parse(bM.getItem(bN)) } catch { bv[bx]["z_" + bN.slice(7)] = bM.getItem(bN) } })); bD.referrerPolicy = "origin"; bD.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bv[bx]))); bC.parentNode.insertBefore(bD, bC) };["complete", "interactive"].includes(bw.readyState) ? zaraz.init() : bv.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1113.0" data-gr-ext-installed="">
     <div class="parallax-mirror"
         style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 400px; width: 1519.2px;">
-        <img class="parallax-slider landing" src="./img/clg.jpeg"
+        <img class="parallax-slider landing" src="./img/new_clg.jpeg"
             style="position: absolute; height: 474px; width: 1519.2px; max-width: none;">
     </div>
     <div class="super_container">
@@ -55,16 +51,20 @@
                 </div>
                 <ul>
                     <li class="menu_item"><a href="index.html">Home</a></li>
-                    <li class="menu_item"><a href="#aboutUs">About us</a></li>
-                    <li class="menu_item"><a href="#">Speakers</a></li>
-                    <li class="menu_item"><a href="contact.html">Contact</a></li>
+                    <li class="menu_item"><a href="committee.html">Committee</a></li>
+                    <li class="menu_item"><a href="authors.html">Authors</a></li>
+                    <li class="menu_item"><a href="index.html">Speakers</a></li>
+                    <li class="menu_item"><a href="registration.html">Registrations</a></li>
+                    <li class="menu_item"><a href="index.html">Camera Ready Submission</a></li>
+                    <li class="menu_item"><a href="index.html">Event Details</a></li>
+                    <li class="menu_item"><a href="index.html#aboutUs">Contact</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="home">
 
-            <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="./img/clg.jpeg"
+            <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="./img/new_clg.jpeg"
                 data-speed="0.8"></div>
 
             <header class="header" id="header">
@@ -79,12 +79,18 @@
                                             <a href="#">
                                                 <div
                                                     class="logo_container d-flex flex-row align-items-start justify-content-start">
+                                                    <div class="logo_image">
+                                                        <div class="py-2"><img src="./img/logo.png" alt=""></div>
+                                                    </div>
                                                     <div class="logo_content">
                                                         <div id="logo_text" class="logo_text logo_text_not_ie">
-                                                            ICITIIT'24</div>
-                                                        <div class="logo_sub">15-16 March 2024, Indian Institute of
-                                                            Information Technology
-                                                            Kottayam, Kerala.</div>
+                                                            <div class="py-4" style="color: #5F8CD3;"> ICITIIT'24
+                                                                <div class="logo_sub">15-16 March 2024, Indian Institute
+                                                                    of Information Technology
+                                                                    Kottayam, Kerala.</div>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </a>
@@ -110,407 +116,429 @@
                             </div>
                         </div>
                     </div>
-                    <div class="header_nav" id="header_nav_pin">
-                        <div class="header_nav_inner">
-                            <div class="header_nav_container">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div
-                                                class="header_nav_content d-flex flex-row align-items-center justify-content-start">
-                                                <nav class="main_nav">
-                                                    <ul>
-                                                        <li><a href="index.html">Home</a></li>
-                                                        <li><a href="#aboutUs">About Us</a></li>
-                                                        <li><a href="#">Speakers</a>
-                                                        </li>
-                                                        <li><a href="committee.html">Committee</a>
-                                                        </li>
-                                                        <li><a href="authors.html">Authors</a>
-                                                        </li>
-                                                        <li><a href="news.html">Program</a></li>
-                                                        <li class="active"> <a href="registration.html">Registration</a>
-                                                        </li>
-                                                        <li><a href="#contactUs">Contact</a></li>
-                                                        <li>
-                                                            <div class="dropdown">
-                                                                <a class="btn dropdown-toggle" type="button"
-                                                                    data-bs-toggle="dropdown"
-                                                                    aria-expanded="false">Previous Editions</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item bg-light"
-                                                                            onMouseOver="this.style.color='black'"
-                                                                            onMouseOut="this.style.color='#4c4c4c'"
-                                                                            href="#">ICITIIT'23</a></li>
-                                                                    <li><a class="dropdown-item bg-light"
-                                                                            onMouseOver="this.style.color='black'"
-                                                                            onMouseOut="this.style.color='#4c4c4c'"
-                                                                            href="#">ICITIIT'22</a>
-                                                                    </li>
-                                                                    <li><a class="dropdown-item bg-light"
-                                                                            onMouseOver="this.style.color='black'"
-                                                                            onMouseOut="this.style.color='#4c4c4c'"
-                                                                            href="#">ICITIIT'21</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                            </div>
-                                            </a>
-                                            </li>
-                                            </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
+
+                    <!-- Navr bar test-->
+
+                    <div class="container-fluid main-nav align-items-center  d-md-none  d-sm-none  d-none d-sm-block d-md-block d-lg-block justify-content-start"
+                        style="background-color: #F3F7F9; ">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item py-3 px-1 active">
+                                <a class="nav-link" href="index.html"><span class="main-nav-item fs-6"
+                                        style="color:#7D7E7E">
+                                        Home
+                                    </span></a>
+                            </li>
+                            <li class="nav-item py-3 px-1">
+                                <a class="nav-link" href="committee.html"><span class="fs-6" style="color:#7D7E7E">
+                                        Committee
+                                    </span></a>
+                            </li>
+                            <li class="nav-item py-3 px-1">
+                                <a class="nav-link" href="authors.html"><span class="fs-6" style="color:#7D7E7E">
+                                        Authors
+                                    </span></a>
+                            </li>
+                            <li class="nav-item py-3 px-1">
+                                <a class="nav-link" href="#"><span class="fs-6" style="color:#7D7E7E"> Speakers
+                                    </span></a>
+                            </li>
+                            <li class="nav-item py-3 px-1">
+                                <a class="nav-link" href="#"><span class="fs-6" style="color:#7D7E7E">
+                                        Registrations
+                                    </span></a>
+                            </li>
+                            <li class="nav-item py-3 px-1">
+                                <a class="nav-link" href="#"><span class="fs-6" style="color:#7D7E7E"> Camera Ready
+                                        Submissions
+                                    </span></a>
+                            </li>
+                            <li class="nav-item py-3 px-1">
+                                <a class="nav-link" href="#"><span class="fs-6" style="color:#7D7E7E"> Event Details
+                                    </span></a>
+                            </li>
+                            <li class="nav-item py-3 px-1">
+                                <a class="nav-link" href="index.html#contactUs"><span class="fs-6"
+                                        style="color:#7D7E7E"> Contact Us
+                                    </span></a>
+                            </li>
+                            <li class="nav-item dropdown py-3">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false"> <span class="fs-6" style="color:#7D7E7E"> Previous
+                                        Editions</span> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="http://icitiit21.iiitkottayam.ac.in/">ICITIIT'23</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="http://icitiit22.iiitkottayam.ac.in/">ICITIIT'22</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="http://icitiit23.iiitkottayam.ac.in/">ICITIIT'21</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="home_content_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="home_content">
+                                <div class="home_date">15-16 March, 2024</div>
+                                <div class="home_title">THE INTERNATIONAL CONFERENCE ON
+                                    INNOVATIVE TRENDS
+                                    IN INFORMATION TECHNOLOGY</div>
+                                <div class="home_location">Kottayam, Kerala, India</div>
+                                <br>
+                                <div class="fs-4 text-white">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-        </header>
-        <div class="home_content_container">
-            <div class="container">
+
+        <div class="calendar" id="cfp">
+            <div class="container reset_container">
                 <div class="row">
-                    <div class="col">
-                        <div class="home_content">
-                            <div class="home_date">15-16 March, 2024</div>
-                            <div class="home_title">THE INTERNATIONAL CONFERENCE ON
-                                INNOVATIVE TRENDS
-                                IN INFORMATION TECHNOLOGY</div>
-                            <div class="home_location">Kottayam, Kerala, India</div>
-                            <br>
-                            <div class="fs-4 text-white">
+                    <div class="col-xl-12 calendar_col">
+                        <div class="calendar_container">
+                            <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
+                                <div>
+                                    <div class="calendar_icon"><img src="./img/calendar.svg" alt=""></div>
+                                </div>
+                                <div class="calendar_title">Registrations</div>
+                            </div>
+                            <div class="content p-3 pb-0">
+                                <p class="mb-0 text-black fs-6 p-3"
+                                    style="font-family: 'Noto Sans', sans-serif; text-align: justify;">
+                                    ICITIIT'24 accepts three types of Registrations: Full Author, Accompanying Author
+                                    and
+                                    Participant.
+
+                                    Full Author registration is for the presenting author of the accepted paper in the
+                                    conference
+                                    and it
+                                    is mandatory.
+
+                                    Authors who are not presenting can register as Accompanying Author. All other
+                                    attendees
+                                    of the
+                                    conference can register
+
+                                    as Participant.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="calendar" id="cfp">
-        <div class="container reset_container">
-            <div class="row">
-                <div class="col-xl-12 calendar_col">
-                    <div class="calendar_container">
-                        <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
-                            <div>
-                                <div class="calendar_icon"><img src="./img/calendar.svg" alt=""></div>
-                            </div>
-                            <div class="calendar_title">Registrations</div>
-                        </div>
-                        <div class="content p-3 pb-0">
-                            <p class="mb-0 text-black fs-6 p-3"
-                                style="font-family: 'Noto Sans', sans-serif; text-align: justify;">
-                                ICITIIT'24 accepts three types of Registrations: Full Author, Accompanying Author and
-                                Participant.
-
-                                Full Author registration is for the presenting author of the accepted paper in the
-                                conference
-                                and it
-                                is mandatory.
-
-                                Authors who are not presenting can register as Accompanying Author. All other attendees
-                                of the
-                                conference can register
-
-                                as Participant.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section id="registration" class="wow fadeInUp">
-
-        <div class="container">
+        <section id="registration" class="wow fadeInUp">
 
             <div class="container">
 
-                <!--<p class="text-danger text-center">*** Due to pandemic situation, the conference will be conducted in virtual mode ***</p>-->
-                <hr>
+                <div class="container">
 
-                <div class="card">
+                    <!--<p class="text-danger text-center">*** Due to pandemic situation, the conference will be conducted in virtual mode ***</p>-->
+                    <hr>
 
-                    <div class="card-header bg-warning text-center"><b>Registration Fess</b></div>
+                    <div class="card">
 
-                    <div class="card-body">
+                        <div class="card-header bg-warning text-center"><b>Registration Fess</b></div>
 
-                        <table class="table table-bordered table-hover table-warning text-center">
+                        <div class="card-body">
 
-                            <tr class="bg-dark text-white">
+                            <table class="table table-bordered table-hover table-warning text-center">
 
-                                <th rowspan="2" class="align-middle">Category</th>
+                                <tr class="bg-dark text-white">
 
-                                <th colspan="2">Inside India</th>
+                                    <th rowspan="2" class="align-middle">Category</th>
 
-                                <th colspan="2">Outside India</th>
+                                    <th colspan="2">Inside India</th>
 
-                            </tr>
+                                    <th colspan="2">Outside India</th>
 
-                            <tr class="bg-dark text-white">
+                                </tr>
 
-                                <th>IEEE (INR)</th>
+                                <tr class="bg-dark text-white">
 
-                                <th>NON-IEEE(INR)</th>
+                                    <th>IEEE (INR)</th>
 
-                                <th>IEEE(USD)</th>
+                                    <th>NON-IEEE(INR)</th>
 
-                                <th>NON-IEEE(USD)</th>
+                                    <th>IEEE(USD)</th>
 
-                            </tr>
+                                    <th>NON-IEEE(USD)</th>
 
-                            <tr class="bg-success text-white">
+                                </tr>
 
-                                <th colspan="5">Author Registation (on or before 20 Jan 2024)</th>
+                                <tr class="bg-success text-white">
 
-                            </tr>
+                                    <th colspan="5">Author Registation (on or before 20 Jan 2024)</th>
 
-                            <tr>
+                                </tr>
 
-                                <td class="text-left"><b> Full Author - Faculty</b></td>
+                                <tr>
 
-                                <td>&#8377;6000</td>
+                                    <td class="text-left"><b> Full Author - Faculty</b></td>
 
-                                <td>&#8377;7000</td>
+                                    <td>&#8377;6000</td>
 
-                                <td>$200</td>
+                                    <td>&#8377;7000</td>
 
-                                <td>$250</td>
+                                    <td>$200</td>
 
-                            </tr>
+                                    <td>$250</td>
 
-                            <tr>
+                                </tr>
 
-                                <td class="text-left"><b> Full Author - Industry Professionals</b></td>
+                                <tr>
 
-                                <td>&#8377;8000</td>
+                                    <td class="text-left"><b> Full Author - Industry Professionals</b></td>
 
-                                <td>&#8377;10000</td>
+                                    <td>&#8377;8000</td>
 
-                                <td>$250</td>
+                                    <td>&#8377;10000</td>
 
-                                <td>$300</td>
+                                    <td>$250</td>
 
-                            </tr>
+                                    <td>$300</td>
 
-                            <tr>
+                                </tr>
 
-                                <td class="text-left"><b>Full Author - Student (UG/PG/Research Scholars)</b></td>
+                                <tr>
 
-                                <td>&#8377;5000</td>
+                                    <td class="text-left"><b>Full Author - Student (UG/PG/Research Scholars)</b></td>
 
-                                <td>&#8377;5500</td>
+                                    <td>&#8377;5000</td>
 
-                                <td>$150</td>
+                                    <td>&#8377;5500</td>
 
-                                <td>$200</td>
+                                    <td>$150</td>
 
-                            </tr>
+                                    <td>$200</td>
 
-                            <tr>
+                                </tr>
 
-                                <th colspan="5" class="bg-danger text-white">Late Registation (after 20 Feb 2024 upto 25
-                                    Feb
-                                    2024)</th>
+                                <tr>
 
-                            </tr>
+                                    <th colspan="5" class="bg-danger text-white">Late Registation (after 20 Feb 2024
+                                        upto 25
+                                        Feb
+                                        2024)</th>
 
-                            <tr>
+                                </tr>
 
-                                <td class="text-left"><b>Full Author - Faculty</b></td>
+                                <tr>
 
-                                <td>&#8377;8000</td>
+                                    <td class="text-left"><b>Full Author - Faculty</b></td>
 
-                                <td>&#8377;9000</td>
+                                    <td>&#8377;8000</td>
 
-                                <td>$250</td>
+                                    <td>&#8377;9000</td>
 
-                                <td>$300</td>
+                                    <td>$250</td>
 
-                            </tr>
-                            <tr>
+                                    <td>$300</td>
 
-                                <td class="text-left"><b>Full Author - Industry Professionals</b></td>
+                                </tr>
+                                <tr>
 
-                                <td>&#8377;10,000</td>
+                                    <td class="text-left"><b>Full Author - Industry Professionals</b></td>
 
-                                <td>&#8377;12,000</td>
+                                    <td>&#8377;10,000</td>
 
-                                <td>$275</td>
+                                    <td>&#8377;12,000</td>
 
-                                <td>$350</td>
+                                    <td>$275</td>
 
-                            </tr>
-                            <tr>
+                                    <td>$350</td>
 
-                                <td class="text-left"><b>Full Author - Student</b></td>
+                                </tr>
+                                <tr>
 
-                                <td>&#8377;7,000</td>
+                                    <td class="text-left"><b>Full Author - Student</b></td>
 
-                                <td>&#8377;7,500</td>
+                                    <td>&#8377;7,000</td>
 
-                                <td>$175</td>
+                                    <td>&#8377;7,500</td>
 
-                                <td>$220</td>
+                                    <td>$175</td>
 
-                            </tr>
+                                    <td>$220</td>
 
+                                </tr>
 
 
-                        </table>
 
-                        <br>
+                            </table>
 
-                        <ul>
+                            <br>
 
-                            <li>Please note that the fees shown above are inclusive of all taxes and levies.
+                            <ul>
 
-                                Any extra charges along with applicable taxes or levies, if any, will have to be borne
-                                by
-                                the
+                                <li>Please note that the fees shown above are inclusive of all taxes and levies.
 
-                                registrant.</li>
+                                    Any extra charges along with applicable taxes or levies, if any, will have to be
+                                    borne
+                                    by
+                                    the
 
-                            <li>IEEE members are requested to upload IEEE membership card / receipt of payment for 2022
-                                online during the online registration process if registering under IEEE category.</li>
+                                    registrant.</li>
 
-                            <li>Students are requested to upload valid student ID card (front and back side) during the
-                                online registration process if registering under that student category.</li>
+                                <li>IEEE members are requested to upload IEEE membership card / receipt of payment for
+                                    2022
+                                    online during the online registration process if registering under IEEE category.
+                                </li>
 
-                            <li>Please keep a copy of the transaction ID, generated by the payment gateway as well as by
-                                your bank. You may need these later if you need to track your payment/registration.</li>
+                                <li>Students are requested to upload valid student ID card (front and back side) during
+                                    the
+                                    online registration process if registering under that student category.</li>
 
-                            <li>All correspondence regarding registration for ICITIIT'24 should contain Paper ID as well
-                                as
-                                registration confirmation number.</li>
+                                <li>Please keep a copy of the transaction ID, generated by the payment gateway as well
+                                    as by
+                                    your bank. You may need these later if you need to track your payment/registration.
+                                </li>
 
-                            <li>Please note that ICITIIT'24, or its hosts, represented by the Organizing Committee as
-                                well
-                                as the IEEE Kerala Section, will not be responsible for any loss, financial or
-                                otherwise,
-                                caused by improper transactions conducted online. While Organizers have taken all
-                                reasonable
-                                precautions to ensure a safe online transaction, it is the registrantâ€™s
-                                responsibility,
-                                while paying the registration fee, to secure their user IDs, passwords, Paper ID, etc.
-                            </li>
+                                <li>All correspondence regarding registration for ICITIIT'24 should contain Paper ID as
+                                    well
+                                    as
+                                    registration confirmation number.</li>
 
-                        </ul>
+                                <li>Please note that ICITIIT'24, or its hosts, represented by the Organizing Committee
+                                    as
+                                    well
+                                    as the IEEE Kerala Section, will not be responsible for any loss, financial or
+                                    otherwise,
+                                    caused by improper transactions conducted online. While Organizers have taken all
+                                    reasonable
+                                    precautions to ensure a safe online transaction, it is the registrantâ€™s
+                                    responsibility,
+                                    while paying the registration fee, to secure their user IDs, passwords, Paper ID,
+                                    etc.
+                                </li>
+
+                            </ul>
+
+                        </div>
 
                     </div>
 
-                </div>
+                    <br><br>
 
-                <br><br>
-
-                <div class="card">
-                    <div class="card-header bg-info text-white"><b>How to Register?</b></div>
-                    <!--<strong class="h5 font-weight-bold"><p>To be updated soon!</p></strong>-->
-                    <div class="card-body">
-                        <strong class="h5 font-weight-bold">Step 1:</strong><br>
-                        <!--  Create a reader account in the <b>OCS-IIITK Submission System</b><span class="text-danger">(only for Participants/Co-authors)</span>:
+                    <div class="card">
+                        <div class="card-header bg-info text-white"><b>How to Register?</b></div>
+                        <!--<strong class="h5 font-weight-bold"><p>To be updated soon!</p></strong>-->
+                        <div class="card-body">
+                            <strong class="h5 font-weight-bold">Step 1:</strong><br>
+                            <!--  Create a reader account in the <b>OCS-IIITK Submission System</b><span class="text-danger">(only for Participants/Co-authors)</span>:
               <a class="btn button-navy" target="_blank" href="https://icitiit.iiitkottayam.ac.in/index.php/icitiit/2021/user/account" >Create a new Account</a>
               <br><span>Authors and co-autors of accepted papers with an author account can </span><span class="text-danger"> proceed to Step 2</span><br><br>
               <strong class="h5 font-weight-bold">Step 2:</strong><br><br>-->
-                        Complete the payment process by transfering the registration fee to below bank account and note
-                        down
-                        the <b>Transaction ID</b><br><br>
-                        <div class="badge badge-warning text-left text-black"
-                            style="font-size:16px;font-weight:normal;line-height:1.5em;">
-                            Account Name: <b>IIITK CONFERENCE</b><br>
-                            Account Number: <b>39077422391</b><br>
-                            IFSC Code of Bank: <b>SBIN0070539 </b><br>
-                            Name of the Bank: <b>SBI, Valavoor Branch</b><br>
-                            Branch Address: <b>Valavoor, Pala, Kottayam District, 686635.</b>
-                        </div><br><br>
-                        <strong class="text-danger">Note: Once a payment or deposit is made, it is non-refundable.
-                        </strong>
-                        <br><br>
-                        <strong class="h5 font-weight-bold">Step 2:</strong><br>
-                        Complete the Registration Process:
-                        <a class="btn button-navy" target="_blank"
-                            href="https://forms.gle/bgD8ZqHErnPmruzN9">Register</a><br>
-                        Once the Registration Process is completed and the payment is verified, a confirmation email
-                        will be
-                        send from ICITIIT'24 Organizing Team within 2-3 working days.<br>
-                        <hr>
-                        <h5 class="font-weight-bold ">VISA Assistance:</h5>
-                        <ul>
-                            <li>Once registration is complete, a seperate request need to send with registration details
-                                to
-                                <a href="#">icitiit24@iiitkottayam.ac.in</a>
-                                inorder to get the invitation letter for VISA purposes.
-                            </li>
-                        </ul>
+                            Complete the payment process by transfering the registration fee to below bank account and
+                            note
+                            down
+                            the <b>Transaction ID</b><br><br>
+                            <div class="badge badge-warning text-left text-black"
+                                style="font-size:16px;font-weight:normal;line-height:1.5em;">
+                                Account Name: <b>IIITK CONFERENCE</b><br>
+                                Account Number: <b>39077422391</b><br>
+                                IFSC Code of Bank: <b>SBIN0070539 </b><br>
+                                Name of the Bank: <b>SBI, Valavoor Branch</b><br>
+                                Branch Address: <b>Valavoor, Pala, Kottayam District, 686635.</b>
+                            </div><br><br>
+                            <strong class="text-danger">Note: Once a payment or deposit is made, it is non-refundable.
+                            </strong>
+                            <br><br>
+                            <strong class="h5 font-weight-bold">Step 2:</strong><br>
+                            Complete the Registration Process:
+                            <a class="btn button-navy" target="_blank"
+                                href="https://forms.gle/bgD8ZqHErnPmruzN9">Register</a><br>
+                            Once the Registration Process is completed and the payment is verified, a confirmation email
+                            will be
+                            send from ICITIIT'24 Organizing Team within 2-3 working days.<br>
+                            <hr>
+                            <h5 class="font-weight-bold ">VISA Assistance:</h5>
+                            <ul>
+                                <li>Once registration is complete, a seperate request need to send with registration
+                                    details
+                                    to
+                                    <a href="#">icitiit24@iiitkottayam.ac.in</a>
+                                    inorder to get the invitation letter for VISA purposes.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
+            <br>
 
-        <br>
+        </section>
 
-    </section>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
+                        <div class="col-lg-6 col-md-6 footer-info">
+                            <h1><a href="#intro"><span>ICITIIT</span>'24</a></h1>
+                            <p class="text-white" style="text-align: justify;"><span>The 5<sup>th</sup> International
+                                    Conference
+                                    on Innovative Trends In
+                                    Information
+                                    Technology (ICITIIT'24)</span>
+                                is an event covering all aspects of software and hardware designs of intelligent and
+                                smart
+                                computing
+                                systems. The conference is technically co-sponsored by IEEE Kerala Section. ICITIIT'24
+                                allows attendees
+                                to
+                                benefit from various
+                                topics that cover state-of-art Information Technology research and development.
+                                ICITIIT'24
+                                encompasses a
+                                wide range of topics
+                                covering Intelligent systems and applications, Big data processing, Internet of things
+                                and
+                                Blockchain,
+                                Secure information processing, Cloud computing,
+                                Edge and Fog Computing, Robotics and automation, Scalable computing, Neuromorphic
+                                engineering, Multimedia
+                                systems, Electronic Design Automation,
+                                Emerging technologies, Healthcare systems, Power and Energy Systems and many more.
+                                Accepted
+                                and presented
+                                papers will be submitted for possible publication in IEEE Xplore.</p>
+                        </div>
 
-                    <div class="col-lg-6 col-md-6 footer-info">
-                        <h1><a href="#intro"><span>ICITIIT</span>'24</a></h1>
-                        <p class="text-white" style="text-align: justify;"><span>The 5<sup>th</sup> International
-                                Conference
-                                on Innovative Trends In
-                                Information
-                                Technology (ICITIIT'24)</span>
-                            is an event covering all aspects of software and hardware designs of intelligent and smart
-                            computing
-                            systems. The conference is technically co-sponsored by IEEE Kerala Section. ICITIIT'24
-                            allows attendees
-                            to
-                            benefit from various
-                            topics that cover state-of-art Information Technology research and development. ICITIIT'24
-                            encompasses a
-                            wide range of topics
-                            covering Intelligent systems and applications, Big data processing, Internet of things and
-                            Blockchain,
-                            Secure information processing, Cloud computing,
-                            Edge and Fog Computing, Robotics and automation, Scalable computing, Neuromorphic
-                            engineering, Multimedia
-                            systems, Electronic Design Automation,
-                            Emerging technologies, Healthcare systems, Power and Energy Systems and many more. Accepted
-                            and presented
-                            papers will be submitted for possible publication in IEEE Xplore.</p>
-                    </div>
-
-                    <div class=" col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="fa fa-angle-right"></i> <a href="https://www.iiitkottayam.ac.in/#!/home"
-                                    target="_blank">IIIT
-                                    Kottayam</a></li>
-                            <li><i class="fa fa-angle-right"></i> <a href="index.html#timeline">Important Dates</a></li>
-                            <li><i class="fa fa-angle-right"></i> <a href="#registration">Registration</a></li>
-                            <!--<li><i class="fa fa-angle-right"></i> <a href="#">Submission</a></li>-->
-                        </ul>
-                    </div>
+                        <div class=" col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="https://www.iiitkottayam.ac.in/#!/home"
+                                        target="_blank">IIIT
+                                        Kottayam</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="index.html#timeline">Important Dates</a>
+                                </li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#registration">Registration</a></li>
+                                <!--<li><i class="fa fa-angle-right"></i> <a href="#">Submission</a></li>-->
+                            </ul>
+                        </div>
 
 
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
-                        <p class="text-white">
-                            IIIT Kottayam <br>
-                            Valavoor P O, Pala, Kottayam<br>
-                            Kerala, India - 686693 <br>
-                            <strong>Phone:</strong> +91-482-2202100, <br>+91-482-2202167, +91-482-2202161<br>
-                            <strong>Email:</strong> icitiit24@iiitkottayam.ac.in<br>
-                        </p>
-                        <!--
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>Contact Us</h4>
+                            <p class="text-white">
+                                IIIT Kottayam <br>
+                                Valavoor P O, Pala, Kottayam<br>
+                                Kerala, India - 686693 <br>
+                                <strong>Phone:</strong> +91-482-2202100, <br>+91-482-2202167, +91-482-2202161<br>
+                                <strong>Email:</strong> icitiit24@iiitkottayam.ac.in<br>
+                            </p>
+                            <!--
               <div class="social-links">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -519,43 +547,43 @@
                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
               </div>
             -->
-                    </div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong>Team ICITIIT'24</strong>. All Rights Reserved
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong>Team ICITIIT'24</strong>. All Rights Reserved
+                </div>
             </div>
-        </div>
-    </footer><!-- End  Footer -->
+        </footer><!-- End  Footer -->
 
-    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-    <script src="./scripts/jquery-3.2.1.min.js"></script>
-    <script src="./scripts/popper.js"></script>
-    <script src="./scripts/bootstrap.min.js"></script>
-    <script src="./scripts/owl.carousel.js"></script>
-    <script src="./scripts/easing.js"></script>
-    <script src="./scripts/parallax.min.js"></script>
-    <script src="./scripts/custom.js"></script>
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        <script src="./scripts/jquery-3.2.1.min.js"></script>
+        <script src="./scripts/popper.js"></script>
+        <script src="./scripts/bootstrap.min.js"></script>
+        <script src="./scripts/owl.carousel.js"></script>
+        <script src="./scripts/easing.js"></script>
+        <script src="./scripts/parallax.min.js"></script>
+        <script src="./scripts/custom.js"></script>
 
-    <script async="" src="./scripts/js"></script>
-    <script>
+        <script async="" src="./scripts/js"></script>
+        <!-- <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-23581568-13');
-    </script>
-    <script defer="" src="./scripts/v52afc6f149f6479b8c77fa569edb01181681764108816"
+    </script> -->
+        <!-- <script defer="" src="./scripts/v52afc6f149f6479b8c77fa569edb01181681764108816"
         integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
         data-cf-beacon="{&quot;rayId&quot;:&quot;7df5e4b06ecc2e96&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;si&quot;:100}"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
